@@ -3,6 +3,7 @@
 ## Changes:
 
 + reverted colours to use default st colours by default
++ reverted select-insert binding to paste selection
 
 
 
