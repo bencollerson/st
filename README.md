@@ -4,6 +4,7 @@
 
 + reverted colours to use default st colours by default
 + reverted select-insert binding to paste selection
++ added more word delimiter characters for mouse selection
 
 
 
