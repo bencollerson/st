@@ -4,9 +4,6 @@ st simple terminal with a few patches.
 * keep bold as original colour
 * my preferred keybindings and colours.
 
-Originally forked from Luke Smith's st but now just based off the original
-suckless upstream.
-
 upstream: https://git.suckless.org/st/
 
 
