@@ -94,47 +94,36 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-/* colors: molokai with proper black. */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	/* "#1b1d1e", - yuck */
-	"#000000",
-	"#ff0044",
-	"#82b414",
-	"#fd971f",
-	"#266c98",
-	"#ac0cb1",
-	"#ae81ff",
-	"#cccccc",
+	[0] = "#000000", /* black   */
+	[1] = "#ff0044", /* red     */
+	[2] = "#82b414", /* green   */
+	[3] = "#fd971f", /* yellow  */
+	[4] = "#266c98", /* blue    */
+	[5] = "#ac0cb1", /* magenta */
+	[6] = "#5aa2b0", /* cyan    */
+	[7] = "#cccccc", /* white   */
 
 	/* 8 bright colors */
-	"#808080",
-	"#f92672",
-	"#a6e22e",
-	"#e6db74",
-	"#7070f0",
-	"#d63ae1",
-	"#66d9ef",
-	"#f8f8f2",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"#cccccc", /* default foreground colour */
-	"#000000", /* default background colour */
+	[8]  = "#808080", /* black   */
+	[9]  = "#f92672", /* red     */
+	[10] = "#a6e22e", /* green   */
+	[11] = "#e6db74", /* yellow  */
+	[12] = "#7070f0", /* blue    */
+	[13] = "#d63ae1", /* magenta */
+	[14] = "#66d9ef", /* cyan    */
+	[15] = "#f8f8f2", /* white   */
 };
-
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+unsigned int defaultcs = 7;
+unsigned int defaultrcs = 7;
 
 /*
  * Default shape of cursor
